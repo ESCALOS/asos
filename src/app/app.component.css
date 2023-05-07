@@ -1,0 +1,73 @@
+.container {
+  position: relative;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+.overlay {
+  position: absolute;
+  top: 33.3%;
+  left: 33.3%;
+  text-align: center;
+}
+
+.overlay h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.overlay h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.buttons-pc {
+  margin: 5vw 0;
+}
+.buttons-mobile {
+  margin-top: 3vw;
+  margin-left: -25%;
+}
+.buttons-pc div a {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-size: 1.5vw;
+  font-weight: 700;
+}
+.buttons div a:hover {
+  background-color: black;
+  color: white;
+}
+.buttons-mobile div a {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-size: 3.5vw;
+  font-weight: 700;
+}
+.just-pc {
+  display: none;
+}
+.just-mobile {
+display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .just-pc {
+    display: flex;
+  }
+  .just-mobile{
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}

@@ -1,0 +1,47 @@
+<div class="toolbar-container">
+  <div style="max-width:60wh;">
+    <mat-toolbar>
+      <div class="just-mobile">
+        <button mat-icon-button>
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+      <div class="div-logo">
+        <span><a href="/"><img src="{{ logo_svg }}" alt="logo" class="logo"></a></span>
+      </div>
+      <div class="nav-button-woman just-pc">
+        <button mat-button style="height: 100%;">
+          WOMAN
+        </button>
+      </div>
+      <div class="nav-button-man nav-button just-pc">
+        <button mat-button style="height: 100%;">
+          MAN
+        </button>
+      </div>
+      <div class="search-box just-pc">
+          <input type="text" id="search-input" placeholder="Escribe aquí para buscar..." style="border-radius: 30px;height: 30px;width: 100%;">
+          <div style="position: absolute;right: 0;">
+            <button mat-icon-button matSuffix>
+              <mat-icon color="primary">search</mat-icon>
+            </button>
+          </div>
+      </div>
+      <span class="spacer just-mobile"></span>
+      <div class="just-mobile">
+        <button mat-icon-button matSuffix>
+          <mat-icon>search</mat-icon>
+        </button>
+      </div>
+      <button mat-icon-button>
+        <mat-icon>person</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon color="warn">favorite</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon>shopping-cart</mat-icon>
+      </button>
+    </mat-toolbar>
+  </div>
+</div>
