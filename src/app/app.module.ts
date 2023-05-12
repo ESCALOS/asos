@@ -14,12 +14,21 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import {MatDialogModule} from '@angular/material/dialog';
+import { ModalComponent } from './components/modal/modal.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ManComponent } from './pages/man/man.component';
+import { WomanComponent } from './pages/woman/woman.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ImgComponent,
     NavbarComponent,
+    ModalComponent,
+    HomeComponent,
+    ManComponent,
+    WomanComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +41,8 @@ import { MatListModule } from '@angular/material/list';
     MatInputModule,
     MatGridListModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

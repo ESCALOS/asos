@@ -3,8 +3,8 @@
     <mat-sidenav-container class="sidenav-container">
       <mat-sidenav #sidenav class="sidenav">
         <mat-nav-list>
-          <a mat-list-item href="#">WOMAN</a>
-          <a mat-list-item href="#">MAN</a>
+          <a mat-list-item [routerLink]="'/woman'">WOMAN</a>
+          <a mat-list-item [routerLink]="'/man'">MAN</a>
         </mat-nav-list>
       </mat-sidenav>
       <mat-sidenav-content>
@@ -14,16 +14,16 @@
               <mat-icon>menu</mat-icon>
             </button>
           </div>
-          <div class="div-logo">
+          <div class="div-logo" [routerLink]="'/'">
             <span><a href="/"><img src="{{ logo_svg }}" alt="logo" class="logo"></a></span>
           </div>
           <div class="nav-button-woman just-pc">
-            <button mat-button style="height: 100%;">
+            <button [routerLink]="'/woman'" mat-button style="height: 100%;">
               WOMAN
             </button>
           </div>
           <div class="nav-button-man nav-button just-pc">
-            <button mat-button style="height: 100%;">
+            <button [routerLink]="'/man'" mat-button style="height: 100%;">
               MAN
             </button>
           </div>
@@ -37,7 +37,7 @@
           </div>
           <span class="spacer just-mobile"></span>
           <div class="just-mobile">
-            <button mat-icon-button matSuffix>
+            <button mat-icon-button (click)="openModalSearch()">
               <mat-icon>search</mat-icon>
             </button>
           </div>
@@ -54,6 +54,5 @@
         <ng-content></ng-content>
       </mat-sidenav-content>
     </mat-sidenav-container>
-
   </div>
 </div>
